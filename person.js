@@ -7,9 +7,16 @@ function person(name,age) {
 		console.log(this.name+ " is "+ this.age + " old");
 	}
 }
+
 person.prototype.jump = function() {
 	// body...
 	console.log('jump');
+};
+
+
+person.prototype.run = function() {
+	// body...
+	console.log('run');
 };
 
 module.exports = person;
